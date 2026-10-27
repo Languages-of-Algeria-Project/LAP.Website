@@ -1,0 +1,360 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>The Language of Algeria Project</title>\
+    <style>\
+        /* --- GLOBAL STYLES --- */\
+        :root \{\
+            --primary-color: #006233; /* Deep Green (Algerian flag) */\
+            --accent-color: #D22730; /* Deep Red (Algerian flag) */\
+            --text-dark: #333;\
+            --text-light: #f4f4f4;\
+            --bg-light: #ffffff;\
+            --bg-gray: #f9f9f9;\
+        \}\
+\
+        body \{\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+            margin: 0;\
+            padding: 0;\
+            line-height: 1.6;\
+            color: var(--text-dark);\
+            background-color: var(--bg-gray);\
+        \}\
+\
+        a \{ text-decoration: none; color: inherit; \}\
+        ul \{ list-style: none; \}\
+\
+        /* --- HEADER & NAVIGATION --- */\
+        header \{\
+            background-color: var(--primary-color);\
+            color: white;\
+            padding: 1rem 0;\
+            position: sticky;\
+            top: 0;\
+            z-index: 1000;\
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);\
+        \}\
+\
+        .container \{\
+            width: 90%;\
+            max-width: 1100px;\
+            margin: 0 auto;\
+        \}\
+\
+        .logo h1 \{\
+            float: left;\
+            font-size: 1.5rem;\
+            margin: 0;\
+        \}\
+\
+        .logo span \{\
+            color: white;\
+        \}\
+\
+        nav \{\
+            float: right;\
+            margin-top: 10px;\
+        \}\
+\
+        nav ul li \{\
+            display: inline;\
+            margin-left: 20px;\
+        \}\
+\
+        nav ul li a \{\
+            color: white;\
+            font-weight: bold;\
+            font-size: 0.9rem;\
+        \}\
+\
+        nav ul li a:hover \{\
+            color: #ccc;\
+        \}\
+\
+        /* --- HERO SECTION --- */\
+        .hero \{\
+            background: linear-gradient(rgba(0, 98, 51, 0.9), rgba(0, 98, 51, 0.7)), url('https://source.unsplash.com/1600x900/?algeria,desert') no-repeat center center;\
+            background-size: cover;\
+            color: white;\
+            height: 60vh;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            text-align: center;\
+        \}\
+\
+        .hero-content \{\
+            padding: 20px;\
+        \}\
+\
+        .hero h2 \{\
+            font-size: 3rem;\
+            margin-bottom: 10px;\
+        \}\
+\
+        .hero p \{\
+            font-size: 1.2rem;\
+            margin-bottom: 20px;\
+        \}\
+\
+        .btn \{\
+            background-color: var(--accent-color);\
+            color: white;\
+            padding: 10px 20px;\
+            border-radius: 5px;\
+            font-weight: bold;\
+            transition: 0.3s;\
+        \}\
+\
+        .btn:hover \{\
+            background-color: #b01e26;\
+        \}\
+\
+        /* --- CONTENT SECTIONS --- */\
+        .section \{\
+            padding: 60px 0;\
+            background-color: var(--bg-light);\
+            border-bottom: 1px solid #eee;\
+        \}\
+\
+        .section-title \{\
+            text-align: center;\
+            font-size: 2rem;\
+            margin-bottom: 40px;\
+            color: var(--primary-color);\
+            text-transform: uppercase;\
+            letter-spacing: 2px;\
+        \}\
+\
+        /* AIMS SECTION */\
+        .aims-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\
+            gap: 20px;\
+        \}\
+\
+        .aim-card \{\
+            background: var(--bg-gray);\
+            padding: 30px;\
+            border-radius: 8px;\
+            border-left: 5px solid var(--primary-color);\
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);\
+        \}\
+\
+        .aim-card h3 \{\
+            color: var(--primary-color);\
+        \}\
+\
+        /* COLLABORATORS SECTION */\
+        .team-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
+            gap: 30px;\
+        \}\
+\
+        .team-member \{\
+            background: white;\
+            border-radius: 10px;\
+            overflow: hidden;\
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);\
+            text-align: center;\
+        \}\
+\
+        .member-avatar \{\
+            width: 100%;\
+            height: 200px;\
+            background-color: #ddd; /* Placeholder color */\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            font-size: 2rem;\
+            color: #aaa;\
+        \}\
+\
+        .member-info \{\
+            padding: 20px;\
+        \}\
+\
+        .member-info h3 \{\
+            margin: 0;\
+            color: var(--primary-color);\
+        \}\
+\
+        .member-info .role \{\
+            font-size: 0.9rem;\
+            color: #666;\
+            font-weight: bold;\
+        \}\
+\
+        /* FUNDING SECTION */\
+        .funding-section \{\
+            background-color: #fff3cd; /* Light yellow warning color */\
+            border-left: 5px solid #ffc107;\
+            padding: 30px;\
+        \}\
+\
+        .funding-status \{\
+            font-weight: bold;\
+            font-size: 1.2rem;\
+        \}\
+\
+        /* --- FOOTER --- */\
+        footer \{\
+            background-color: var(--primary-color);\
+            color: white;\
+            text-align: center;\
+            padding: 20px 0;\
+            font-size: 0.9rem;\
+        \}\
+        \
+        .footer-logo \{\
+            float: left;\
+            font-size: 1.2rem;\
+            font-weight: bold;\
+        \}\
+\
+        /* RESPONSIVE DESIGN */\
+        @media (max-width: 768px) \{\
+            .logo h1, .logo span, nav \{\
+                float: none;\
+                text-align: center;\
+                width: 100%;\
+            \}\
+            \
+            .logo h1 \{\
+                margin-top: 10px;\
+            \}\
+            \
+            nav \{\
+                margin-top: 10px;\
+                background: rgba(0, 0, 0, 0.1);\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <!-- Header -->\
+    <header>\
+        <div class="container">\
+            <div class="logo">\
+                <h1>Language of <span>Algeria</span></h1>\
+            </div>\
+            <nav>\
+                <ul>\
+                    <li><a href="#aims">Core Aims</a></li>\
+                    <li><a href="#collaborators">Collaborators</a></li>\
+                    <li><a href="#funding">Funding Status</a></li>\
+                </ul>\
+            </nav>\
+        </div>\
+    </header>\
+\
+    <!-- Hero Section -->\
+    <section class="hero">\
+        <div class="hero-content">\
+            <h2>The Multilingual Heritage of the DZ</h2>\
+            <p>A research project exploring the linguistic landscape of Algeria through the lens of Arabic, French, Berber (Amazigh), and local dialects.</p>\
+            <a href="#aims" class="btn">View Our Research</a>\
+        </div>\
+    </section>\
+\
+    <!-- Core Aims Section -->\
+    <section id="aims" class="section">\
+        <div class="container">\
+            <h2 class="section-title">Project Core Aims</h2>\
+            <div class="aims-grid">\
+                <div class="aim-card">\
+                    <h3>Linguistic Documentation</h3>\
+                    <p>Creating a comprehensive digital archive of dialects spoken across the 58 Wilayas, preserving variants of Darija (Elifbaki) and Chleuh.</p>\
+                </div>\
+                <div class="aim-card">\
+                    <h3>Educational Impact</h3>\
+                    <p>Developing innovative teaching materials that bridge the gap between the official curriculum (French/Arabic) and indigenous local languages.</p>\
+                </div>\
+                <div class="aim-card">\
+                    <h3>Cultural Identity</h3>\
+                    <p>Investigating how language policies affect social cohesion and the transmission of cultural heritage in the modern Algerian context.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Collaborators Section -->\
+    <section id="collaborators" class="section">\
+        <div class="container">\
+            <h2 class="section-title">The Research Team</h2>\
+            <div class="team-grid">\
+                <!-- Collaborator 1 -->\
+                <div class="team-member">\
+                    <div class="member-avatar">\uc0\u55357 \u56420 </div> <!-- Replace with <img> tag in production -->\
+                    <div class="member-info">\
+                        <h3>Dr. Fatima Zohra Name</h3>\
+                        <div class="role">PI - Linguistic Structure</div>\
+                        <p>Research interest in Sociolinguistics and dialectology.</p>\
+                    </div>\
+                </div>\
+                <!-- Collaborator 2 -->\
+                <div class="team-member">\
+                    <div class="member-avatar">\uc0\u55357 \u56420 </div> <!-- Replace with <img> tag in production -->\
+                    <div class="member-info">\
+                        <h3>Mohamed Ali Name</h3>\
+                        <div class="role">Co-PI - Data Analysis</div>\
+                        <p>Expert in quantitative analysis of vernacular corpora.</p>\
+                    </div>\
+                </div>\
+                <!-- Collaborator 3 -->\
+                <div class="team-member">\
+                    <div class="member-avatar">\uc0\u55357 \u56420 </div> <!-- Replace with <img> tag in production -->\
+                    <div class="member-info">\
+                        <h3>Sarah Djaballah</h3>\
+                        <div class="role">Researcher - Literature</div>\
+                        <p>Focus on historical archives and colonial manuscripts.</p>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Funding Section -->\
+    <section id="funding" class="section">\
+        <div class="container">\
+            <div class="funding-section">\
+                <h2>Funding Status</h2>\
+                <div class="funding-status">\
+                    Project Status: <strong>SELF-FUNDED (NON-PAID)</strong>\
+                </div>\
+                <p>\
+                    This project is currently being developed as an independent academic initiative by the research team. We are utilizing our own resources, institutional libraries, and volunteer hours to drive the initial phase of the research.\
+                </p>\
+                <hr>\
+                <p>\
+                    <strong>Future Outlook:</strong> We are actively preparing grant applications for future academic funding opportunities (e.g., ANR, AHRC, or regional EU programs). The data collected so far will serve as the foundation for these future submissions.\
+                </p>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Footer -->\
+    <footer>\
+        <div class="container">\
+            <div class="footer-logo">\
+                Language of Algeria Project\
+            </div>\
+            <p>&copy; 2023 Language of Algeria Research Team. All rights reserved.</p>\
+        </div>\
+    </footer>\
+\
+</body>\
+</html>\
+}
